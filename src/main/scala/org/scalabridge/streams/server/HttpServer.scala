@@ -43,6 +43,9 @@ object HttpServer extends IOApp {
       case GET -> Root / "myStream" =>
         // you want to use your stream in here to see the response returning on the server
         Ok("Your stream in here")
+
+      case GET -> Root / "test" =>
+        Ok("My stream testing")
     }
     .orNotFound
 
